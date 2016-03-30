@@ -8,3 +8,5 @@ pygmentsuseclasses = true
   author = "Henrik Farre"
   GitHub = "henrik-farre"
   GoogleAnalyticsUserID = "UA-4186065-1"
+  stylesheets = ["styles.css", "magnific-popup/magnific-popup.css", "custom.css"]
+  javascripts = ["magnific-popup/jquery.magnific-popup.js", "rockhopper.js"]
