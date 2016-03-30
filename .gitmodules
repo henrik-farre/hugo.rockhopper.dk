@@ -2,3 +2,4 @@
 	path = public
 	url = git@github.com:henrik-farre/henrik-farre.github.io.git
 	branch = master
+	ignore = dirty
