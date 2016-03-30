@@ -12,6 +12,7 @@ tags:
 
 ---
 I have been playing around with my Android Developer Phone (ADP) for about 2 weeks now, and this are my thoughts on it so far.
+<!--more-->
 
 ## Wireless connection (Wi-Fi/3G)
 
@@ -44,7 +45,7 @@ The applications that come with the G1, like Gmail, browser and messaging, are e
 I have installed a couple of extra applications (either from the market place or directly from webpages) that you might find useful:
 
   * [Connectbot][3]: establish ssh connections to servers, supports ssh keys
-  * [AndFTP][4]: upload/download files via ftp/sftp
+  * [AndFTP](http://www.lysesoft.com/products/andftp/): upload/download files via ftp/sftp
   * Terminal: gives access to the ADP&#8217;s Linux shell
   * Anycut: create shortcuts to applications or activities like text a specific contact
 
@@ -72,4 +73,3 @@ Although I have limited experience with smart phones, I really prefer the ADP wh
  [1]: http://interfacelift.com
  [2]: http://banshee-project.org/
  [3]: http://code.google.com/p/connectbot/
- [4]: http://www.lysesoft.com/products/andftp/

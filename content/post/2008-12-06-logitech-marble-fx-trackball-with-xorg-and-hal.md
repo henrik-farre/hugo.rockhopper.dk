@@ -12,14 +12,16 @@ tags:
 
 ---
 After the recent upgrade in ArchLinux of xorg-server from 1.4.x to 1.5.x my thrusty Logitech Marble FX trackball did not work entirely. The trackball does not have a dedicated scroll wheel, but by pressing a button, and using the trackball, you can scroll both vertical and horizontal.
+<!--more-->
 
 In order to get the emulated scroll working again you first have to update the evdev driver (the xf86-input-evdev package), as version 2.0.7 doesn&#8217;t support the needed options.
-  
+
 I use the [xf86-input-evdev-git PKGBUILD from aur][1] (which depends on [xkeyboard-config-git][2]) which works fine.
-  
+
 Once you have build the packages and installed them (remove the conflicting packages by using pacman -Rd packagename) you will have to create a Hal fdi file, I created &#8220;/etc/hal/fdi/policy/11-x11-mouse.fdi&#8221; containing:
 
-<pre>&lt;?xml version="1.0" encoding="ISO-8859-1"?&gt;
+{{< highlight xml >}}
+&lt;?xml version="1.0" encoding="ISO-8859-1"?&gt;
 &lt;deviceinfo version="0.2"&gt;
   &lt;device&gt;
     &lt;match key="info.capabilities" contains="input.mouse"&gt;
@@ -36,7 +38,7 @@ Once you have build the packages and installed them (remove the conflicting pack
     &lt;/match&gt;
   &lt;/device&gt;
 &lt;/deviceinfo&gt;
-</pre>
+{{< /highlight >}}
 
 Now shutdown X, restart hal and X and the emulated scroll whell should work just fine. I have the following output in my &#8220;/var/log/Xorg.0.log&#8221;:
 

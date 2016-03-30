@@ -11,6 +11,7 @@ tags:
 
 ---
 I&#8217;ve been putting off upgrading my ADP1 in fear of that I would brick it, but after reading that there now are official update images available I decided to give it a try.
+<!--more-->
 
 Here is a short walk through:
 
@@ -94,7 +95,7 @@ The update should be complete after that.
 
 ## New things after the update
 
-2 new applications are installed; &#8220;Voice Dialer&#8221; and &#8220;Voice Search&#8221;. I have not played with them yet so I can&#8217;t really say anything about them <img src="http://rockhopper.hf/wp-includes/images/smilies/simple-smile.png" alt=":)" class="wp-smiley" style="height: 1em; max-height: 1em;" />
+2 new applications are installed; &#8220;Voice Dialer&#8221; and &#8220;Voice Search&#8221;. I have not played with them yet so I can&#8217;t really say anything about them :)
 
 There are a couple of new settings here and there, but I have not noticed anything fancy, so I guess we still have to wait the the mysterious &#8220;cupcake&#8221; update, if such a thing even exists.
 

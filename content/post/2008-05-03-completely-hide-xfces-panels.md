@@ -16,4 +16,4 @@ Even though a Xfce panel is &#8220;hidden&#8221; (i.e. &#8220;Autohide&#8221; is
 
 The 3 pixels are now 100% transparent, but when the mouse cursor moves over the panel, the panel becomes opaque.
 
-<img src="https://rockhopper.dk/wp-content/uploads/2008/05/xfce-panel-manager.png" alt="Xfce\&#039;s panel set to hide completely" title="xfce-panel-manager" width="281" height="182" class="alignright size-full wp-image-50" />
+{{< photo src="/uploads/xfce-panel-manager.png" title="Xfce's panel set to hide completely" thumb="/uploads/xfce-panel-manager.png" no_responsive="true" >}}

@@ -10,7 +10,7 @@ tags:
   - raid
 
 ---
-We had a disk failure on one of our Xen servers at [work][1] last week, and what we thought would be a quick disk replace, turned into a small nightmare.
+We had a disk failure on one of our Xen servers at [work](http://www.bellcom.dk) last week, and what we thought would be a quick disk replace, turned into a small nightmare.
 
 Our setup is fairly &#8220;simple&#8221;: 2 x raid1&#8217;s consisting of sda1/sdb1 (/dev/md0 mounted at /) and sda3/sdb3 (/dev/md1 with LVM on top of it).
 
@@ -31,8 +31,6 @@ On md0 sdb1 is failed, and on md1 it&#8217;s sda3, so one partition is marked fa
 
 While the raid was syncing there was a lot of disk errors on sda1 and sda3, so we identified sda using its serial number, shutdown the server, replaced the disk, booted and everything looked fine.
 
-Fast forward to the next day: we started receiving e-mails from customers saying data was missing from their sites, and they where missing data from the day the drive failed&#8230; then it dawned on us: when we readded sda3 it was overridden with the old data from sdb3  <img src="http://rockhopper.hf/wp-includes/images/smilies/frownie.png" alt=":(" class="wp-smiley" style="height: 1em; max-height: 1em;" />. Only one thing to do: restore from backup.
+Fast forward to the next day: we started receiving e-mails from customers saying data was missing from their sites, and they where missing data from the day the drive failed&#8230; then it dawned on us: when we readded sda3 it was overridden with the old data from sdb3 :(. Only one thing to do: restore from backup.
 
 Now the question is: why the hell was sda3 marked as failed after the reboot? It was on the good drive&#8230;
-
- [1]: http://www.bellcom.dk "Bellcom Open Source ApS"

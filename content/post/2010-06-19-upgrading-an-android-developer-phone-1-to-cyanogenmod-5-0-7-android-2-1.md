@@ -10,33 +10,34 @@ tags:
   - android
 
 ---
-My ADP1 has been running Android 1.6 (Cyanogenmod 4.2.x) for quite a while now, and I was exited to see that it would be possible to run Android 2.1 on it thanks to Cyanogen   <img src="http://rockhopper.hf/wp-includes/images/smilies/simple-smile.png" alt=":)" class="wp-smiley" style="height: 1em; max-height: 1em;" />This guide is a digest of information found on Cyanogen&#8217;s wiki, like: [ADP1 Firmware to CyanogenMod][1], please consult the wiki for up todate information and warnings <img src="http://rockhopper.hf/wp-includes/images/smilies/simple-smile.png" alt=":)" class="wp-smiley" style="height: 1em; max-height: 1em;" />
+My ADP1 has been running Android 1.6 (Cyanogenmod 4.2.x) for quite a while now, and I was exited to see that it would be possible to run Android 2.1 on it thanks to Cyanogen :). This guide is a digest of information found on Cyanogen&#8217;s wiki, like: [ADP1 Firmware to CyanogenMod](http://wiki.cyanogenmod.com/index.php/Full_Update_Guide_-_ADP1_Firmware_to_CyanogenMod), please consult the wiki for up todate information and warnings :)
+<!--more-->
 
 ## Prerequisite
 
 Download the following files:
 
-  * [RA recovery for dream][2] I use version 1.7.0
-  * [DangerSPL][3]
-  * [Google apps for Cyanogen][4]
-  * [Lateste Cyanogen 5.0.x for dream][5]
+  * [RA recovery for dream](http://forum.xda-developers.com/showpost.php?p=4647751&postcount=1) I use version 1.7.0
+  * [DangerSPL](http://wiki.cyanogenmod.com/index.php/DangerSPL_and_CM_5_for_Dream)
+  * [Google apps for Cyanogen](http://wiki.cyanogenmod.com/index.php/Latest_version#ERE36B_Google_addon_for_G1.2FDream.2FSapphire)
+  * [Lateste Cyanogen 5.0.x for dream](http://wiki.cyanogenmod.com/index.php/Latest_version#Current_Stable_Version_2)
 
 ## Install recovery image
 
-Based on [Full Update Guide &#8211; ADP1 Firmware to CyanogenMod][1]
+Based on [Full Update Guide &#8211; ADP1 Firmware to CyanogenMod](http://wiki.cyanogenmod.com/index.php/Full_Update_Guide_-_ADP1_Firmware_to_CyanogenMod)
 
-  1. Boot the phone into fastboot mode by holding the BACK  button while pressing the power button
+  1. Boot the phone into fastboot mode by holding the BACK button while pressing the power button
   2. On your computer run the following commands:
 
 <pre>./fastboot device #check if the phone is available
 ./fastboot flash recovery recovery-RA-dream-v1.7.0.img
-./fastboot reboot
+./fastboot reboot</pre>
 
-<a href="http://android-dls.com/wiki/index.php?title=Fastboot">More information about fastboot</a></pre>
+<a href="http://android-dls.com/wiki/index.php?title=Fastboot">More information about fastboot</a>
 
 ## Install bootloader
 
-In order to run Android 2.1 you need to replace the bootloader with one called &#8220;DangerSPL&#8221;, and there is a reason it is called &#8220;Danger&#8221;  <img src="http://rockhopper.hf/wp-includes/images/smilies/simple-smile.png" alt=":)" class="wp-smiley" style="height: 1em; max-height: 1em;" />please read [DangerSPL and CM 5 for Dream][3] and read the warnings and prerequisites.
+In order to run Android 2.1 you need to replace the bootloader with one called &#8220;DangerSPL&#8221;, and there is a reason it is called &#8220;Danger&#8221; :) please read [DangerSPL and CM 5 for Dream](http://wiki.cyanogenmod.com/index.php/DangerSPL_and_CM_5_for_Dream) and read the warnings and prerequisites.
 
 Copy the files to the root of your SD card:
 
@@ -62,16 +63,10 @@ After the bootloader has been installed it is time to flash Android 2.1 and Goog
   2. Do the same with gapps-ds-ERE36B-signed.zip after CM 5.0.x
   3. Reboot (takes awhile to boot)
 
-If all went well, you should be able to enter your PIN number and enjoy Android 2.1 <img src="http://rockhopper.hf/wp-includes/images/smilies/simple-smile.png" alt=":)" class="wp-smiley" style="height: 1em; max-height: 1em;" />
+If all went well, you should be able to enter your PIN number and enjoy Android 2.1 :)
 
 <div id="_mcePaste" style="position: absolute; left: -10000px; top: 202px; width: 1px; height: 1px; overflow: hidden;">
   <h1 id="firstHeading" class="firstHeading">
     DangerSPL and CM 5 for Dream
   </h1>
 </div>
-
- [1]: http://wiki.cyanogenmod.com/index.php/Full_Update_Guide_-_ADP1_Firmware_to_CyanogenMod
- [2]: http://forum.xda-developers.com/showpost.php?p=4647751&postcount=1
- [3]: http://wiki.cyanogenmod.com/index.php/DangerSPL_and_CM_5_for_Dream
- [4]: http://wiki.cyanogenmod.com/index.php/Latest_version#ERE36B_Google_addon_for_G1.2FDream.2FSapphire
- [5]: http://wiki.cyanogenmod.com/index.php/Latest_version#Current_Stable_Version_2

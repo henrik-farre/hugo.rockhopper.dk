@@ -12,6 +12,7 @@ tags:
 
 ---
 I decided to bring my [Powerbook Titanium][1] back into service as a server/torrent fetcher. So I downloaded [ArchLinux PPC][2] and installed it.
+<!--more-->
 
 I just followed the [instructions available][3] in the ArchLinux wiki, and here are my notes on the installation.
 
@@ -57,7 +58,7 @@ udev gives an error on every boot:
 <pre class="bash codesnip" style="font-family:monospace;">:: Loading udev...<span class="sy0">/</span>etc<span class="sy0">/</span>start_udev: <span class="nu0">110</span>: <span class="sy0">/</span>sbin<span class="sy0">/</span>udevtrigger: not found
 <span class="sy0">/</span>etc<span class="sy0">/</span>start_udev: <span class="nu0">110</span>: <span class="sy0">/</span>sbin<span class="sy0">/</span>udevsettle: not found done.</pre>
 
-I tried a [couple of solutions][7] I found in ArchLinux&#8217;s forum but they did not help, so I&#8217;m just ignoring it <img src="http://rockhopper.hf/wp-includes/images/smilies/simple-smile.png" alt=":)" class="wp-smiley" style="height: 1em; max-height: 1em;" />
+I tried a [couple of solutions][7] I found in ArchLinux&#8217;s forum but they did not help, so I&#8217;m just ignoring it :)
 
 Another error that comes at each boot is this clock error:
 

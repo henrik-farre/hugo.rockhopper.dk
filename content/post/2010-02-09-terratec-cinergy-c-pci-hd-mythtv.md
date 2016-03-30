@@ -12,23 +12,24 @@ tags:
   - mythbackend
 
 ---
-In the middle of December 2009 danish cable TV providor [Stofa][1] made most of the channels in its DVB-C network [available unencoded][2]. This prompted me to replace my analogue [Hauppauge WinTV-PVR-500 TV tuner card][3] (yes the links goes to my old PVR-150 page) with something that could record the digital signal from DVB-C. I looked for a card that had the following characteristic:
+In the middle of December 2009 danish cable TV providor [Stofa](http://stofa.dk) made most of the channels in its DVB-C network [available unencoded](http://www.stofa.dk/showpage.php?mid=368). This prompted me to replace my analogue [Hauppauge WinTV-PVR-500 TV tuner card](https://rockhopper.dk/old/linux/hardware/pvr_cards.html) (yes the links goes to my old PVR-150 page) with something that could record the digital signal from DVB-C. I looked for a card that had the following characteristic:
+<!--more-->
 
   * Have stable Open Source Linux drivers
-  * It should work with [MythTV][4]
+  * It should work with [MythTV](/category/linux/software/mythtv/)
   * Fit in a PCI slot (My Asus AT3N7A-I motherboard only has one PCI slot)
   * Be able to record HD TV
   * Not be to expensive
 
-I spend a lot of time looking for information on different sites like [LinuxTV wiki][5] (direct link to [TerraTec Cinergy C DVB-C][6]) and [MythTV wiki][7], and ended up with the TerraTec card.
+I spend a lot of time looking for information on different sites like [LinuxTV wiki](http://www.linuxtv.org/wiki/index.php) (direct link to [TerraTec Cinergy C DVB-C](http://www.linuxtv.org/wiki/index.php/TerraTec_Cinergy_C_DVB-C)) and [MythTV wiki](http://www.mythtv.org/wiki/Video_capture_card), and ended up with the TerraTec card.
 
 ## Installing the card
 
-On the physical installation I don&#8217;t have any interesting to say, it fits into the PCI slot on the motherboard without covering/blocking anything. 
+On the physical installation I don&#8217;t have any interesting to say, it fits into the PCI slot on the motherboard without covering/blocking anything.
 
 The &#8220;mantis&#8221; driver that the card uses is currently not in the mainline kernel, but it will be of version 2.6.33 (I&#8217;m currently on 2.6.32). So you have to download the source and build the driver yourself.
 
-I found the &#8220;ArchVDR&#8221; project quite useful, I just followed the instructions in their wiki on [how to build the s2-liplianin-hg package][8] (scroll down to the section about s2-liplianin-hg). After building (it takes a while as there are a lot of drives in the [s2-liplianin mercurial repository][9]). When the build is complete and the package is installed, you only have to run &#8220;modprobe mantis&#8221; as root.
+I found the &#8220;ArchVDR&#8221; project quite useful, I just followed the instructions in their wiki on [how to build the s2-liplianin-hg package](http://sourceforge.net/apps/trac/archvdr/wiki/ArchVDR) (scroll down to the section about s2-liplianin-hg). After building (it takes a while as there are a lot of drives in the [s2-liplianin mercurial repository](http://mercurial.intuxication.org/hg/s2-liplianin)). When the build is complete and the package is installed, you only have to run &#8220;modprobe mantis&#8221; as root.
 
 You can check if the driver loaded correctly by looking at the output of &#8220;dmesg&#8221;, I get the following:
 
@@ -59,7 +60,7 @@ Mantis VP-2040 IR Receiver: unknown key: key=0x00 down=0
 
 ## Adding the card to MythTV
 
-I started by scanning for channels using the &#8220;scan&#8221; tool from the linuxtv-dvb-apps package in ArchLinux. None of the provided data files (in &#8220;/usr/share/dvb/dvb-c/&#8221;) contained the correct information, so I created one using information about frequency and other bits provided by [Stofa][10]:
+I started by scanning for channels using the &#8220;scan&#8221; tool from the linuxtv-dvb-apps package in ArchLinux. None of the provided data files (in &#8220;/usr/share/dvb/dvb-c/&#8221;) contained the correct information, so I created one using information about frequency and other bits provided by [Stofa](http://www.stofa.dk/showpage.php?shortcut=kanalsoeg):
 
 <pre>Frekvens: 346 MHz
 Netværsks-ID: 0
@@ -88,19 +89,13 @@ I started by shutting down the mythbackend, and starting &#8220;mythtv-setup&#82
 
 In mythtv-setup enter &#8220;Capture cards&#8221; and select &#8220;New capture card&#8221;.
 
-<div id="attachment_230" style="width: 160px" class="wp-caption alignnone">
-  <a rel="facebox" href="https://rockhopper.dk/wp-content/uploads/2010/02/mythtv_capture_card_add_new.png"><img class="size-thumbnail wp-image-230 " title="mythtv_capture_card_add_new" src="https://rockhopper.dk/wp-content/uploads/2010/02/mythtv_capture_card_add_new-150x150.png" alt="MythTV setup: adding new capture card" width="150" height="150" /></a>
-  
-  <p class="wp-caption-text">
-    MythTV setup: adding new capture card
-  </p>
-</div>
+{{< photo src="/uploads/mythtv_capture_card_add_new.png" title="MythTV setup: adding new capture card" thumb="/uploads/mythtv_capture_card_add_new-150x150.png" no_responsive="true" >}}
 
   * Card type: &#8220;DVB DTV capture card (v3.x)&#8221; (DVB Device Number should change to &#8220;/dev/dvb/adapter0/frontend0&#8221; and Frontend ID should change to Philips TDA10023 DVB-C)
 
 In &#8220;Recording options&#8221; I entered:
 
-  * Max recordings: 2 (allows you to record 2 streams simultaneously if the channels are in the same [mux][11])
+  * Max recordings: 2 (allows you to record 2 streams simultaneously if the channels are in the same [mux](http://en.wikipedia.org/wiki/DVB-C#Technical_description_of_the_DVB-C_transmitter))
   * Use DVB Card for active EIT scan: checked (should allow MythTV to get data for its TV guide from the DVB stream)
 
 When I pressed finish, the card is listed on the capture cards page.
@@ -109,13 +104,7 @@ When I pressed finish, the card is listed on the capture cards page.
 
 In mythtv-setup enter &#8220;Video sources&#8221; and select &#8220;New video source&#8221;.
 
-<div id="attachment_234" style="width: 160px" class="wp-caption alignnone">
-  <a rel="facebox" href="https://rockhopper.dk/wp-content/uploads/2010/02/mythtv_video_source_add_new.png"><img class="size-thumbnail wp-image-234 " title="mythtv_video_source_add_new" src="https://rockhopper.dk/wp-content/uploads/2010/02/mythtv_video_source_add_new-150x150.png" alt="MythTV setup: adding new video source" width="150" height="150" /></a>
-  
-  <p class="wp-caption-text">
-    MythTV setup: adding new video source
-  </p>
-</div>
+{{< photo src="/uploads/mythtv_video_source_add_new.png" title="MythTV setup: adding new video source" thumb="/uploads/mythtv_video_source_add_new-150x150.png" no_responsive="true" >}}
 
   * Video source name: &#8220;TV Guide&#8221; (whatever you want)
   * Listings grabber: &#8220;Transmitted guide only (EIT)&#8221;
@@ -126,13 +115,7 @@ Press finish and the source should be listed on the sources page.
 
 In mythtv-setup enter &#8220;Input connections&#8221; and select the one that matches the DVB device number you got from capture cards.
 
-<div id="attachment_237" style="width: 160px" class="wp-caption alignnone">
-  <a rel="facebox" href="https://rockhopper.dk/wp-content/uploads/2010/02/mythtv_input_connections.png"><img class="size-thumbnail wp-image-237 " title="mythtv_input_connections" src="https://rockhopper.dk/wp-content/uploads/2010/02/mythtv_input_connections-150x150.png" alt="MythTV setup: input connections" width="150" height="150" /></a>
-  
-  <p class="wp-caption-text">
-    MythTV setup: input connections
-  </p>
-</div>
+{{< photo src="/uploads/mythtv_input_connections.png" title="MythTV setup: input connections" thumb="/uploads/mythtv_input_connections-150x150.png" no_responsive="true" >}}
 
   * Display Name: TV
   * Video source: &#8220;TV Guide&#8221; (the one that was added previously)
@@ -141,39 +124,21 @@ Now press &#8220;Scan for channels&#8221;
 
 ### Scanning for channels
 
-<div id="attachment_239" style="width: 160px" class="wp-caption alignnone">
-  <a rel="facebox" href="https://rockhopper.dk/wp-content/uploads/2010/02/mythtv_scanning_for_channels.png"><img class="size-thumbnail wp-image-239 " title="mythtv_scanning_for_channels" src="https://rockhopper.dk/wp-content/uploads/2010/02/mythtv_scanning_for_channels-150x150.png" alt="MythTV setup: scanning for channels" width="150" height="150" /></a>
-  
-  <p class="wp-caption-text">
-    MythTV setup: scanning for channels
-  </p>
-</div>
+{{< photo src="/uploads/mythtv_scanning_for_channels.png" title="MythTV setup: scanning for channels" thumb="/uploads/mythtv_scanning_for_channels-150x150.png" no_responsive="true" >}}
 
   * Desired Services: TV
   * Scan Type: &#8220;Full Scan (Tuned)&#8221;
-  * Frequency: 346000000 (based on the information from [Stofa][10], **Note:** the frequency is in Hz)
+  * Frequency: 346000000 (based on the information from [Stofa](http://www.stofa.dk/showpage.php?shortcut=kanalsoeg), **Note:** the frequency is in Hz)
   * Symbol Rate: 6900000
   * Modulation: &#8220;QAM 64&#8221;
 
 When you press next MythTV should start scanning:
 
-<div id="attachment_244" style="width: 160px" class="wp-caption alignnone">
-  <a rel="facebox" href="https://rockhopper.dk/wp-content/uploads/2010/02/mythtv_scanning_for_channels2.png"><img class="size-thumbnail wp-image-244 " title="mythtv_scanning_for_channels2" src="https://rockhopper.dk/wp-content/uploads/2010/02/mythtv_scanning_for_channels2-150x150.png" alt="MythTV setup: performing the scan" width="150" height="150" /></a>
-  
-  <p class="wp-caption-text">
-    MythTV setup: performing the scan
-  </p>
-</div>
+{{< photo src="/uploads/mythtv_scanning_for_channels2.png" title="MythTV setup: performing the scan" thumb="/uploads/mythtv_scanning_for_channels2-150x150.png" no_responsive="true" >}}
 
 This takes a while, and then you should get:
 
-<div id="attachment_245" style="width: 160px" class="wp-caption alignnone">
-  <a rel="facebox" href="https://rockhopper.dk/wp-content/uploads/2010/02/mythtv_scanning_for_channels_done.png"><img class="size-thumbnail wp-image-245 " title="mythtv_scanning_for_channels_done" src="https://rockhopper.dk/wp-content/uploads/2010/02/mythtv_scanning_for_channels_done-150x150.png" alt="MythTV setup: channel scanning completed" width="150" height="150" /></a>
-  
-  <p class="wp-caption-text">
-    MythTV setup: channel scanning completed
-  </p>
-</div>
+{{< photo src="/uploads/mythtv_scanning_for_channels_done.png" title="MythTV setup: channel scanning completed" thumb="/uploads/mythtv_scanning_for_channels_done-150x150.png" no_responsive="true" >}}
 
 Select &#8220;Insert all&#8221; which brings you back to the input connection screen.
 
@@ -183,7 +148,7 @@ In mythtv-setup enter &#8220;Channel Editor&#8221;
 
 Here you can see all the found channels and change their names, channel number, and so on. I did not change anything using the channel editor, but went to phpMyAdmin and changed settings like &#8220;Use on air guide&#8221; in one SQL.
 
-This should be it, you should be able to record now <img src="http://rockhopper.hf/wp-includes/images/smilies/simple-smile.png" alt=":)" class="wp-smiley" style="height: 1em; max-height: 1em;" />
+This should be it, you should be able to record now :)
 
 ## EIT (TV guide)
 
@@ -221,31 +186,33 @@ So for the time being I have given up, but luckily I found another way to get da
 
 ## TV grab dvb plus
 
-[tv\_grab\_dvb_plus][12] is a small tool that produces a xmltv file that can be imported into MythTV, just download and compile it. It worked the first time I tried it, although there are two minor issues:
+[tv\_grab\_dvb_plus](http://sourceforge.net/projects/tvgrabeit/) is a small tool that produces a xmltv file that can be imported into MythTV, just download and compile it. It worked the first time I tried it, although there are two minor issues:
 
   1. The mapping of xmltv ids to channels in MythTV
   2. The encoding of special characters like Danish letters (æøå)
 
 The first issue I fixed with a small PHP script:
 
-<pre class="php codesnip" style="font-family:monospace;"><span class="kw2">&lt;?php</span> <span class="re0">$mysqli</span> <span class="sy0">=</span> <span class="kw2">new</span> mysqli<span class="br0">&#40;</span><span class="st0">"localhost"</span><span class="sy0">,</span> <span class="st0">"YOUR DB USER"</span><span class="sy0">,</span> <span class="st0">"YOUR DB PASSWORD"</span><span class="sy0">,</span> <span class="st0">"mythconverg"</span><span class="br0">&#41;</span><span class="sy0">;</span> <span class="kw1">if</span> <span class="br0">&#40;</span><span class="re0">$mysqli</span><span class="sy0">-&gt;</span><span class="me1">connect_error</span><span class="br0">&#41;</span>
-<span class="br0">&#123;</span>
-<a href="http://www.php.net/printf"><span class="kw3">printf</span></a><span class="br0">&#40;</span><span class="st0">"Connect failed: <span class="es6">%s</span><span class="es1">\n</span>"</span><span class="sy0">,</span> mysqli_connect_error<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="sy0">;</span>
-<a href="http://www.php.net/exit"><span class="kw3">exit</span></a><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span>
-<span class="br0">&#125;</span>
-&nbsp;
-<span class="re0">$result</span> <span class="sy0">=</span> <span class="re0">$mysqli</span><span class="sy0">-&gt;</span><span class="me1">query</span><span class="br0">&#40;</span><span class="st0">"SELECT chanid, serviceid FROM channel"</span><span class="br0">&#41;</span><span class="sy0">;</span>
-&nbsp;
-<span class="kw1">while</span> <span class="br0">&#40;</span> <span class="re0">$row</span> <span class="sy0">=</span> <span class="re0">$result</span><span class="sy0">-&gt;</span><span class="me1">fetch_assoc</span><span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#41;</span>
-<span class="br0">&#123;</span>
-<span class="re0">$sql</span> <span class="sy0">=</span> <a href="http://www.php.net/sprintf"><span class="kw3">sprintf</span></a><span class="br0">&#40;</span><span class="st0">"UPDATE channel SET xmltvid = '<span class="es6">%s</span>' WHERE chanid = <span class="es6">%d</span>"</span><span class="sy0">,</span> <span class="re0">$row</span><span class="br0">&#091;</span><span class="st_h">'serviceid'</span><span class="br0">&#093;</span><span class="sy0">.</span><span class="st_h">'.dvb.guide'</span><span class="sy0">,</span> <span class="br0">&#40;</span>int<span class="br0">&#41;</span> <span class="re0">$row</span><span class="br0">&#091;</span><span class="st_h">'chanid'</span><span class="br0">&#093;</span><span class="br0">&#41;</span><span class="sy0">;</span>
-&nbsp;
-<span class="re0">$mysqli</span><span class="sy0">-&gt;</span><span class="me1">query</span><span class="br0">&#40;</span><span class="re0">$sql</span><span class="br0">&#41;</span><span class="sy0">;</span>
-<span class="br0">&#125;</span>
-&nbsp;
-<span class="re0">$mysqli</span><span class="sy0">-&gt;</span><span class="me1">close</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span>
-&nbsp;
-<span class="kw2">?&gt;</span></pre>
+{{< highlight php >}}
+<?php $mysqli = new mysqli("localhost", "YOUR DB USER", "YOUR DB PASSWORD", "mythconverg"); if ($mysqli->connect_error)
+{
+printf("Connect failed: %s\n", mysqli_connect_error());
+exit();
+}
+
+$result = $mysqli->query("SELECT chanid, serviceid FROM channel");
+
+while ( $row = $result->fetch_assoc() )
+{
+$sql = sprintf("UPDATE channel SET xmltvid = '%s' WHERE chanid = %d", $row['serviceid'].'.dvb.guide', (int) $row['chanid']);
+
+$mysqli->query($sql);
+}
+
+$mysqli->close();
+
+?>
+{{< /highlight >}}
 
 Remember to replace &#8220;YOUR DB USER&#8221; and &#8220;YOUR DB PASSWORD&#8221; with real values.
 
@@ -273,18 +240,4 @@ mantis_ack_wait (0): Slave RACK Fail !</pre>
 
 I hope this problem is fixed when the 2.6.33 Linux kernel hits my machine.
 
-To view the recorded shows I strongly recommend a [Nvidia graphics card that support VDPAU][13].
-
- [1]: http://stofa.dk
- [2]: http://www.stofa.dk/showpage.php?mid=368
- [3]: https://rockhopper.dk/old/linux/hardware/pvr_cards.html
- [4]: /category/linux/software/mythtv/
- [5]: http://www.linuxtv.org/wiki/index.php
- [6]: http://www.linuxtv.org/wiki/index.php/TerraTec_Cinergy_C_DVB-C
- [7]: http://www.mythtv.org/wiki/Video_capture_card
- [8]: http://sourceforge.net/apps/trac/archvdr/wiki/ArchVDR
- [9]: http://mercurial.intuxication.org/hg/s2-liplianin
- [10]: http://www.stofa.dk/showpage.php?shortcut=kanalsoeg
- [11]: http://en.wikipedia.org/wiki/DVB-C#Technical_description_of_the_DVB-C_transmitter
- [12]: http://sourceforge.net/projects/tvgrabeit/
- [13]: http://en.wikipedia.org/wiki/VDPAU
+To view the recorded shows I strongly recommend a [Nvidia graphics card that support VDPAU](http://en.wikipedia.org/wiki/VDPAU).

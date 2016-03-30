@@ -11,9 +11,10 @@ tags:
   - mythbackend
 
 ---
-I had the chance to test [AnySee&#8217;s USB based DVB-C tuner][1] with MythTV, and I can confirm it &#8220;just works&#8221;.
+I had the chance to test [AnySee&#8217;s USB based DVB-C tuner](http://www.anysee.dk/products.html) with MythTV, and I can confirm it &#8220;just works&#8221;.
+<!--more-->
 
-To setup the AnySee E30 C Plus just follow my [Terratec Cinergy C PCI HD + MythTV guide][2], the setup is exactly the same. The only thing I noticed is that the signal strength is not as high as it is with the Terratec card, it hovers around 40-50% vs 90-95%.
+To setup the AnySee E30 C Plus just follow my [Terratec Cinergy C PCI HD + MythTV guide](https://rockhopper.dk/linux/software/mythtv/terratec-cinergy-c-pci-hd-mythtv/), the setup is exactly the same. The only thing I noticed is that the signal strength is not as high as it is with the Terratec card, it hovers around 40-50% vs 90-95%.
 
 Dmesg output:
 
@@ -35,6 +36,3 @@ DVB: registering adapter 0 frontend 0 (Philips TDA10023 DVB-C)...
 input: IR-receiver inside an USB DVB receiver as /devices/pci0000:00/0000:00:1d.7/usb2/2-6/input/input10
 dvb-usb: schedule remote query interval to 200 msecs.
 dvb-usb: Anysee DVB USB2.0 successfully initialized and connected.</pre>
-
- [1]: http://www.anysee.dk/products.html
- [2]: https://rockhopper.dk/linux/software/mythtv/terratec-cinergy-c-pci-hd-mythtv/

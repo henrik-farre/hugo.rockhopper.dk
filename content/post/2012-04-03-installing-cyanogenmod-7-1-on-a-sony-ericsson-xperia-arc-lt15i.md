@@ -10,7 +10,8 @@ tags:
   - android
 
 ---
-Although the instructions for upgrading the Sony Ericsson Xperia Arc (not the new S version) are <a title="Sony Ericsson Xperia Arc: Full Update Guide" href="http://wiki.cyanogenmod.com/wiki/Sony_Ericsson_Xperia_Arc:_Full_Update_Guide" target="_blank">pretty detailed</a> there are some twists that are not documented:
+Although the instructions for upgrading the Sony Ericsson Xperia Arc (not the new S version) are <a title="Sony Ericsson Xperia Arc: Full Update Guide" href="http://wiki.cyanogenmod.com/wiki/Sony_Ericsson_Xperia_Arc:_Full_Update_Guide" target="_blank">pretty detailed</a> there are some twists that are not documented:
+<!--more-->
 
   1. You need to upgrade to the latests official Sony Ericsson rom (currently &#8220;4.0.2.A.0.62 Generic Global World&#8221; ), you can find links in this <a title="ARC/ARC S (ROOT.FTF&.IMG)4.0.2.A.0.62 Generic Global World+Flashtool+Ringtones+Other" href="http://forum.xda-developers.com/showthread.php?t=1330314" target="_blank">xda developers thread</a>, else the phone will not be able to unlock the SIM card
   2. To flash the rom you will need <a title="Flashtool" href="http://androxyde.github.com/" target="_blank">FlashTool</a> (Java based app, works fine in Linux). And when it says that you have to connect the USB cable, and press a button, you don&#8217;t have to press the power button at the same time
