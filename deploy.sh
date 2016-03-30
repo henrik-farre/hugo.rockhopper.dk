@@ -6,7 +6,7 @@ echo -e "\033[0;32mDeploying updates to GitHub...\033[0m"
 
 THEME="beg"
 
-rm -rf public
+rm -rf public/*
 
 STYLESHEET_PATHS="static/css themes/${THEME}/static/css"
 JAVASCRIPT_PATHS="static/js"
