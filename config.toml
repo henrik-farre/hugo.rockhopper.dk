@@ -1,11 +1,11 @@
 baseurl = "https://henrik-farre.github.io/"
 languageCode = "en-us"
 title = "Rockhopper.dk"
-pygmentsstyle = "vim"
-pygmentsuseclasses = true
+newContentEditor = "nvim"
+theme = "beg"
 
 [params]
-  author = "Henrik Farre"
+  Author = "Henrik Farre"
   GitHub = "henrik-farre"
   GoogleAnalyticsUserID = "UA-4186065-1"
   stylesheets = ["styles.css", "magnific-popup/magnific-popup.css", "custom.css"]
