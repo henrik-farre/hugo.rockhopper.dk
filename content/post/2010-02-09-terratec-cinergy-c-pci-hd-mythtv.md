@@ -5,7 +5,6 @@ layout: post
 date: 2010-02-09
 url: /linux/software/mythtv/terratec-cinergy-c-pci-hd-mythtv/
 categories:
-  - Hardware
   - MythTV
 tags:
   - dvb-c

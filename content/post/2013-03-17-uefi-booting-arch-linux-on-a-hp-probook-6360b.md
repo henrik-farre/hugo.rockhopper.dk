@@ -7,7 +7,7 @@ url: /linux/hardware/uefi-booting-arch-linux-on-a-hp-probook-6360b/
 categories:
   - Hardware
 tags:
-  - archlinux
+  - Archlinux
   - BIOS
   - booting
   - ProBook 6360b

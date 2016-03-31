@@ -7,7 +7,7 @@ url: /linux/hardware/htpcnas-for-watching-netflix-on-linux-part-1-the-hardware/
 categories:
   - Hardware
 tags:
-  - htpc
+  - HTPC
   - motherboard
   - XBMC
 

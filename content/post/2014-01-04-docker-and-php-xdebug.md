@@ -5,9 +5,8 @@ layout: post
 date: 2014-01-04
 url: /linux/docker-and-php-xdebug/
 categories:
-  - Development
+  - PHP
   - Linux
-  - php
   - vim
 tags:
   - Docker
