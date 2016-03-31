@@ -193,26 +193,27 @@ So for the time being I have given up, but luckily I found another way to get da
 
 The first issue I fixed with a small PHP script:
 
-{{< highlight php >}}
-<?php $mysqli = new mysqli("localhost", "YOUR DB USER", "YOUR DB PASSWORD", "mythconverg"); if ($mysqli->connect_error)
+<pre>
+<code class="language-php">&lt;?php $mysqli = new mysqli("localhost", "YOUR DB USER", "YOUR DB PASSWORD", "mythconverg"); if ($mysqli-&gt;connect_error)
 {
 printf("Connect failed: %s\n", mysqli_connect_error());
 exit();
 }
 
-$result = $mysqli->query("SELECT chanid, serviceid FROM channel");
+$result = $mysqli-&gt;query("SELECT chanid, serviceid FROM channel");
 
-while ( $row = $result->fetch_assoc() )
+while ( $row = $result-&gt;fetch_assoc() )
 {
 $sql = sprintf("UPDATE channel SET xmltvid = '%s' WHERE chanid = %d", $row['serviceid'].'.dvb.guide', (int) $row['chanid']);
 
-$mysqli->query($sql);
+$mysqli-&gt;query($sql);
 }
 
-$mysqli->close();
+$mysqli-&gt;close();
 
-?>
-{{< /highlight >}}
+?&gt;
+</code>
+</pre>
 
 Remember to replace &#8220;YOUR DB USER&#8221; and &#8220;YOUR DB PASSWORD&#8221; with real values.
 
@@ -220,7 +221,9 @@ This script uses the serviceid from the channel table to set the xmltvid to the 
 
 The encoding issue was fixed by editing the source of tv\_grab\_dvb\_plus. In the file &#8220;src/dvb\_text.cpp&#8221; on line 133, I changed the encoding to &#8220;ISO-8859-1&#8221;:
 
-<pre class="c codesnip" style="font-family:monospace;">cd <span class="sy0">=</span> iconv_open<span class="br0">&#40;</span><span class="st0">"ISO-8859-1"</span><span class="sy0">,</span> cs_new<span class="br0">&#41;</span><span class="sy0">;</span></pre>
+<pre>
+cd = iconv_open("ISO-8859-1", cs_new);
+</pre>
 
 And now it works.
 

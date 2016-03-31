@@ -14,11 +14,11 @@ tags:
 ---
 My MythTV frontend depends on the masterbackend to be up and running, mainly because some partitions are nfs mounted. So I created a simple script to check if the backend is responding to ping:<!--more-->
 
-{{< highlight bash >}}
-#!/bin/bash
+<pre>
+<code class="language-bash">#!/bin/bash
 
 function isup() {
- ping -q -n -c1 -w2 BACKEND_IP > /dev/null
+ ping -q -n -c1 -w2 BACKEND_IP &gt; /dev/null
  if [[ $? !=  ]]; then
    sleep 5
    isup
@@ -27,14 +27,15 @@ function isup() {
  fi
 }
 
-isup{{< /highlight >}}
+isup</code>
+</pre>
 
 But there is a small problem with this approach: the backend starts replying to ping long before nfsd and mythbackend are ready.
 
 So instead of using ping, I created a script that checks if mythbackend&#8217;s status page (port 6544) is ready, using wget:
 
-{{< highlight bash >}}
-#!/bin/bash
+<pre>
+<code class="language-bash">#!/bin/bash
 
 function isbackendup {
   wget -q http://BACKEND_IP:6544 -O /dev/null
@@ -45,12 +46,13 @@ function isbackendup {
     stat_done
   fi
 }
-{{< /highlight >}}
+</code>
+</pre>
 
 Finally I wrapped it all up in an ArchLinux rc script, and use WOL to wake the backend:
 
-{{< highlight bash >}}
-#!/bin/bash
+<pre>
+<code class="language-bash">#!/bin/bash
 
 . /etc/rc.conf
 . /etc/rc.d/functions
@@ -68,7 +70,7 @@ function isbackendup {
 case "$1" in
   start)
     stat_busy "Checking if backend is up..."
-    wol BACKEND_MACADDR > /dev/null
+    wol BACKEND_MACADDR &gt; /dev/null
     isbackendup
     ;;
   stop)
@@ -82,7 +84,8 @@ case "$1" in
   *)
     echo "usage: $0 {start|stop|restart}"
 esac
-{{< /highlight >}}
+</code>
+</pre>
 
 If you run ArchLinux just added it to /etc/rc.conf in the DAEMONS array.
 

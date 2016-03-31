@@ -14,8 +14,8 @@ tags:
 We had a problem with the nagios check_mailq plugin at [work][1], it kept timing out. So I wrote a simple bash script (instead of 610 lines of perl) which is &#8220;compatible&#8221; with check\_mailq (supports the same arguments) which uses &#8220;exim4&#8221; and is very quick. Just drop it in /usr/local/bin/check\_mailq\_simple.sh and adjust your nagios conf to use that instead of check\_mailq
 <!--more-->
 
-{{< highlight bash >}}
-#!/bin/bash
+<pre>
+<code class="language-bash">#!/bin/bash
 
 WARNING=""
 CRITICAL=""
@@ -46,7 +46,8 @@ else
   echo "ERROR: something did not go right"
   exit 2
 fi
-{{< /highlight >}}
+</code>
+</pre>
 
 This has been tested on Debian sarge.
 

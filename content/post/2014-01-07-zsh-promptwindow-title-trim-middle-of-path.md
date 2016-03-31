@@ -16,8 +16,8 @@ I run zsh in tmux, and sometimes I end up in a deep directory where the path mat
 
 So I changed my ~/.zshrc to contain this:
 
-{{< highlight bash >}}
-####################################################
+<pre>
+<code class="language-bash">####################################################
 # Set title function
 # Used in precmd
 function title() {
@@ -70,7 +70,8 @@ function precmd() {
 function preexec() {
   title "$1"
 }
-{{< /highlight >}}
+</code>
+</pre>
 
 This creates the following window title: ~/Work/docker/&#8230;/all/modules/somemodule. The magic happens by saying %7(c:%-3~/&#8230;/%3~:%~) which means: if &#8220;c&#8221;, which contains the entire path after prefix has been replaced -> /home/username to ~, is larger than 7, show the 3 first directories, then &#8230; and finally the last 3 directories.
 

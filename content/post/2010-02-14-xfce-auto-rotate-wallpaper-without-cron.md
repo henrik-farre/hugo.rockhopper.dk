@@ -15,8 +15,8 @@ Since Xfce 4.6 I&#8217;ve had the wallpaper autorotated on my Xfce desktop with 
 
 So I made a workaround that did not require cron, and it runs in the current session. I created a .desktop file in ~/.config/autostart with this content:
 
-{{< highlight ini >}}
-[Desktop Entry]
+<pre>
+<code class="language-ini">[Desktop Entry]
 Encoding=UTF-8
 Version=0.9.4
 Type=Application
@@ -26,12 +26,13 @@ Exec=/home/enrique/bin/xfce-rotatebg.sh &
 StartupNotify=false
 Terminal=false
 Hidden=false
-{{< /highlight >}}
+</code>
+</pre>
 
 And the content of the xfce-rotatebg.sh is:
 
-{{< highlight bash >}}
-#!/bin/sh
+<pre>
+<code class="language-bash">#!/bin/sh
 while true; do
   PROPERTY="/backdrop/screen0/monitor0/image-path"
   IMAGE_PATH=`xfconf-query -c xfce4-desktop -p ${PROPERTY}`
@@ -39,7 +40,8 @@ while true; do
   xfconf-query -c xfce4-desktop -p ${PROPERTY} -s "${IMAGE_PATH}"
   sleep 600
 done
-{{< /highlight >}}
+</code>
+</pre>
 
 The sleep command controls the delay between wallpaper changes.
 

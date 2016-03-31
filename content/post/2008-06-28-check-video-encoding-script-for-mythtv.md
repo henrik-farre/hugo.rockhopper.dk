@@ -16,12 +16,12 @@ I order to work around this, I created a script to check which video encoding is
 
 You can of cause adapt it if you would like to use MPlayer instead of Xine, or want the script to check for something else than Xvid, or want the script to check for something entirely different then encoding (size maybe?), just check the output of: mplayer -identify &#8220;file&#8221;
 
-{{< highlight bash >}}
-#!/bin/bash
+<pre>
+<code class="language-bash">#!/bin/bash
 
 # Don't check encoding if MythTV is trying to playback a DVD
 if [[ ${1} != 'dvd://' ]]; then
-  VIDEO_FORMAT=`mplayer -really-quiet -identify -frames  -vc null -vo null -ao null ${1} 2&lt;/dev/null | awk -F= '/^ID_VIDEO_FORMAT/ {print $2}'` # ID_VIDEO_FORMAT contains the encoding
+  VIDEO_FORMAT=`mplayer -really-quiet -identify -frames -vc null -vo null -ao null ${1} 2&lt;/dev/null | awk -F= '/^ID_VIDEO_FORMAT/ {print $2}'` # ID_VIDEO_FORMAT contains the encoding
 else
   VIDEO_FORMAT='dvd'
 fi
@@ -35,7 +35,8 @@ fi
 # Xine options
 AUDIO_DRIVER="-A alsa"
 EXTRA_OPTIONS="-pfhq --no-splash"
-DEBUG_OPTIONS="--verbose=5 < /shared/mythtv/xine.log"
+DEBUG_OPTIONS="--verbose=5 &gt; /shared/mythtv/xine.log"
 
 xine ${VIDEO_DRIVER} ${AUDIO_DRIVER} ${EXTRA_OPTIONS} ${1}
-{{< /highlight >}}
+</code>
+</pre>

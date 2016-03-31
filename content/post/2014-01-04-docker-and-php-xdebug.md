@@ -20,19 +20,21 @@ To use the [vdebug plugin](https://github.com/joonty/vdebug) in Vim I have set x
 
 /etc/php5/conf.d/20-xdebug.ini (Debian wheezy)
 
-{{< highlight ini >}}
-zend_extension=/usr/lib/php5/20100525/xdebug.so
+<pre>
+<code class="language-ini">zend_extension=/usr/lib/php5/20100525/xdebug.so
 xdebug.remote_enable=1
 xdebug.remote_autostart=0
 xdebug.remote_connect_back=1
-xdebug.remote_port=9000{{< /highlight >}}
+xdebug.remote_port=9000</code>
+</pre>
 
 And in my ~/.vimrc I have these vdebug settings:
 
-{{< highlight vim >}}
-let g:vdebug_options = {"path_maps": {"/var/www": "/home/username/Localdev"}, \
+<pre>
+<code class="language-vim">let g:vdebug_options = {"path_maps": {"/var/www": "/home/username/Localdev"}, \
 "break_on_open": 0, "watch_window_style": "compact", \
-"server" : "172.17.42.1"}{{< /highlight >}}
+"server" : "172.17.42.1"}</code>
+</pre>
 
 172.17.42.1 is the ip of the bridge created by docker, it can be found by using ip addr and looking for the &#8220;docker0&#8221; interface.
 

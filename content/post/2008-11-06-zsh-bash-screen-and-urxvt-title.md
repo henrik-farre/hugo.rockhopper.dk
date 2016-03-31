@@ -23,29 +23,32 @@ I have a pretty consistence terminal title in both shells. I use hostname[last p
 I have the following in my ~/.zsh:
 
 
-{{< highlight bash >}}
-if [[ ${TERM} == "screen-bce" || ${TERM} == "screen" ]]; then
+<pre>
+<code class="language-bash">if [[ ${TERM} == "screen-bce" || ${TERM} == "screen" ]]; then
   precmd () { print -Pn "\033k\033\134\033k%m[%1d]\033\134" }
   preexec () { print -Pn "\033k\033\134\033k%m[$1]\033\134" }
 else
   precmd () { print -Pn "\e]0;%n@%m: %~\a" }
   preexec () { print -Pn "\e]0;%n@%m: $1\a" }
 fi
-PS1=$'%{\e[0;32m%}%m%{\e[0m%}:%~> '
+PS1=$'%{\e[0;32m%}%m%{\e[0m%}:%~&gt; '
 export PS1
-{{< /highlight >}}
+</code>
+</pre>
 
 My ~/.bashrc:
 
-{{< highlight bash >}}
-PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME}: ${PWD}\007"'
-PS1='\[\033[0;32m\]\h\[\033[00m\]:\w> '
+<pre>
+<code class="language-bash">PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME}: ${PWD}\007"'
+PS1='\[\033[0;32m\]\h\[\033[00m\]:\w&gt; '
 export PS1 PROMPT_COMMAND
-{{< /highlight >}}
+</code>
+</pre>
 
 And finally my ~/.screenrc
 
-{{< highlight bash >}}
-hardstatus string "%h"
+<pre>
+<code class="language-bash">hardstatus string "%h"
 caption always "%{= kw} %-w%{= wk}%n*%t%{-}%+w%{= kw} %=%d %M %0c %{g}%H%{-}"
-{{< /highlight >}}
+</code>
+</pre>

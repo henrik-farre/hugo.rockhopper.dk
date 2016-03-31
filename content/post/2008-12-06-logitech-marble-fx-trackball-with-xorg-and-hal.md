@@ -20,8 +20,8 @@ I use the [xf86-input-evdev-git PKGBUILD from aur][1] (which depends on [xkeyboa
 
 Once you have build the packages and installed them (remove the conflicting packages by using pacman -Rd packagename) you will have to create a Hal fdi file, I created &#8220;/etc/hal/fdi/policy/11-x11-mouse.fdi&#8221; containing:
 
-{{< highlight xml >}}
-&lt;?xml version="1.0" encoding="ISO-8859-1"?&gt;
+<pre>
+<code class="language-xml">&lt;?xml version="1.0" encoding="ISO-8859-1"?&gt;
 &lt;deviceinfo version="0.2"&gt;
   &lt;device&gt;
     &lt;match key="info.capabilities" contains="input.mouse"&gt;
@@ -38,7 +38,8 @@ Once you have build the packages and installed them (remove the conflicting pack
     &lt;/match&gt;
   &lt;/device&gt;
 &lt;/deviceinfo&gt;
-{{< /highlight >}}
+</code>
+</pre>
 
 Now shutdown X, restart hal and X and the emulated scroll whell should work just fine. I have the following output in my &#8220;/var/log/Xorg.0.log&#8221;:
 
