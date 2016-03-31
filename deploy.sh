@@ -4,7 +4,7 @@
 # - https://blog.tohojo.dk/2015/10/automatically-combining-css-files-with-hugo.html
 echo -e "\033[0;32mDeploying updates to GitHub...\033[0m"
 
-THEME="beg"
+THEME="rockhopper"
 
 rm -rf public/*
 
