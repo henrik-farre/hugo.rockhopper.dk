@@ -12,7 +12,7 @@ I'm a veteran web developer with experience in a multitude of PHP based applicat
  * Wordpress
  * Symfony
 
-I also know a lot about [Docker](https://github.com/henrik-farre/docker), [Linux](/Categories/linux/) and [Vim](https://github.com/henrik-farre/vimrc)
+I also know a lot about [Docker](https://github.com/henrik-farre/docker), [Linux](/categories/linux/) and [Vim](https://github.com/henrik-farre/vimrc)
 
 Find me on:
 
