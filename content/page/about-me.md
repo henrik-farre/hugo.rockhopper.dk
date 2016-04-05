@@ -19,3 +19,4 @@ Find me on:
  * <i class='fa fa-github'></i> [GitHub](https://github.com/henrik-farre)
  * <i class='fa fa-linkedin'></i> [LinkedIn](https://dk.linkedin.com/in/henrikfarre)
 
+This blog is powered by [Hugo](http://gohugo.io) and [GitHub Pages](https://pages.github.com/) and you can find my setup [here](https://github.com/henrik-farre/hugo.rockhopper.dk)
