@@ -10,9 +10,9 @@ theme = "rockhopper"
   stylesheets = ["styles.css", "magnific-popup/magnific-popup.css", "custom.css"]
   javascripts = ["magnific-popup/jquery.magnific-popup.js", "rockhopper.js"]
 
-[taxonomies]
-  tag = "Tags"
-  category = "Categories"
+# [taxonomies]
+#   tag = "Tags"
+#   category = "Categories"
 
 [[menu.main]]
     name = "About me"
