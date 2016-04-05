@@ -7,6 +7,7 @@ theme = "rockhopper"
 [params]
   Author = "Henrik Farre"
   GoogleAnalyticsUserID = "UA-4186065-1"
+  GoogleSiteVerification= "eoEQEAp-8H6Sou4fffVz-N58YP34LIRG0wJyHvvxVJw"
   stylesheets = ["styles.css", "magnific-popup/magnific-popup.css", "custom.css"]
   javascripts = ["magnific-popup/jquery.magnific-popup.js", "rockhopper.js"]
 
