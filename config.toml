@@ -1,4 +1,4 @@
-baseurl = "https://rockhopper.dk/"
+baseurl = "http://rockhopper.dk/"
 languageCode = "en-us"
 title = "Rockhopper.dk"
 newContentEditor = "nvim"
