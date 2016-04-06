@@ -27,8 +27,7 @@ function isup() {
  fi
 }
 
-isup</code>
-</pre>
+isup</code></pre>
 
 But there is a small problem with this approach: the backend starts replying to ping long before nfsd and mythbackend are ready.
 
@@ -46,8 +45,7 @@ function isbackendup {
     stat_done
   fi
 }
-</code>
-</pre>
+</code></pre>
 
 Finally I wrapped it all up in an ArchLinux rc script, and use WOL to wake the backend:
 
@@ -84,8 +82,7 @@ case "$1" in
   *)
     echo "usage: $0 {start|stop|restart}"
 esac
-</code>
-</pre>
+</code></pre>
 
 If you run ArchLinux just added it to /etc/rc.conf in the DAEMONS array.
 

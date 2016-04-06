@@ -38,8 +38,7 @@ Once you have build the packages and installed them (remove the conflicting pack
     &lt;/match&gt;
   &lt;/device&gt;
 &lt;/deviceinfo&gt;
-</code>
-</pre>
+</code></pre>
 
 Now shutdown X, restart hal and X and the emulated scroll whell should work just fine. I have the following output in my &#8220;/var/log/Xorg.0.log&#8221;:
 

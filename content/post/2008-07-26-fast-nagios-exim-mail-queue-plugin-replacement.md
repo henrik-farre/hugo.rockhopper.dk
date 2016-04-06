@@ -46,8 +46,7 @@ else
   echo "ERROR: something did not go right"
   exit 2
 fi
-</code>
-</pre>
+</code></pre>
 
 This has been tested on Debian sarge.
 

@@ -55,8 +55,7 @@ MINTEMP=hwmon0/device/pwm1=35 hwmon0/device/pwm2=45
 MAXTEMP=hwmon0/device/pwm1=45 hwmon0/device/pwm2=50
 MINSTART=hwmon0/device/pwm1=150 hwmon0/device/pwm2=150
 MINSTOP=hwmon0/device/pwm1=100 hwmon0/device/pwm2=100
-</code>
-</pre>
+</code></pre>
 
 On a hot summerday the sensors command outputs:
 
@@ -99,8 +98,7 @@ I use the ondemand CPU frequceny scaling governor, so most of the time all four 
   echo ondemand &gt; /sys/devices/system/cpu/cpu${i}/cpufreq/scaling_governor
   echo 1 &gt;/sys/devices/system/cpu/cpu${i}/cpufreq/ondemand/ignore_nice_load
 done
-</code>
-</pre>
+</code></pre>
 
  [1]: http://www.gigabyte.com.tw/Products/Motherboard/Products_Spec.aspx?ProductID=3005
  [2]: http://products.amd.com/en-us/DesktopCPUDetail.aspx?id=526&f1=AMD+Phenom%E2%84%A2+II+X4&f2=810&f3=2600&f4=512&f5=AM3&f6=C2&f7=45nm+SOI&f8=95+W&f9=4000&f10=False&f11=False

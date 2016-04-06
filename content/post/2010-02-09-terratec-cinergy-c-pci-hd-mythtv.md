@@ -211,8 +211,7 @@ $mysqli-&gt;query($sql);
 $mysqli-&gt;close();
 
 ?&gt;
-</code>
-</pre>
+</code></pre>
 
 Remember to replace &#8220;YOUR DB USER&#8221; and &#8220;YOUR DB PASSWORD&#8221; with real values.
 

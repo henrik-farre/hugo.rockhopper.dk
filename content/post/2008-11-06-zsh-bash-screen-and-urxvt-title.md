@@ -33,8 +33,7 @@ else
 fi
 PS1=$'%{\e[0;32m%}%m%{\e[0m%}:%~&gt; '
 export PS1
-</code>
-</pre>
+</code></pre>
 
 My ~/.bashrc:
 
@@ -42,13 +41,11 @@ My ~/.bashrc:
 <code class="language-bash">PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME}: ${PWD}\007"'
 PS1='\[\033[0;32m\]\h\[\033[00m\]:\w&gt; '
 export PS1 PROMPT_COMMAND
-</code>
-</pre>
+</code></pre>
 
 And finally my ~/.screenrc
 
 <pre>
 <code class="language-bash">hardstatus string "%h"
 caption always "%{= kw} %-w%{= wk}%n*%t%{-}%+w%{= kw} %=%d %M %0c %{g}%H%{-}"
-</code>
-</pre>
+</code></pre>

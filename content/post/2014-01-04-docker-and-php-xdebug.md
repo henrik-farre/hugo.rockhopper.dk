@@ -24,16 +24,14 @@ To use the [vdebug plugin](https://github.com/joonty/vdebug) in Vim I have set x
 xdebug.remote_enable=1
 xdebug.remote_autostart=0
 xdebug.remote_connect_back=1
-xdebug.remote_port=9000</code>
-</pre>
+xdebug.remote_port=9000</code></pre>
 
 And in my ~/.vimrc I have these vdebug settings:
 
 <pre>
 <code class="language-vim">let g:vdebug_options = {"path_maps": {"/var/www": "/home/username/Localdev"}, \
 "break_on_open": 0, "watch_window_style": "compact", \
-"server" : "172.17.42.1"}</code>
-</pre>
+"server" : "172.17.42.1"}</code></pre>
 
 172.17.42.1 is the ip of the bridge created by docker, it can be found by using ip addr and looking for the &#8220;docker0&#8221; interface.
 

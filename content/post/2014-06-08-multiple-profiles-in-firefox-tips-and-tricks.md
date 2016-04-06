@@ -29,8 +29,7 @@ Type=Application
 MimeType=text/html;text/xml;application/xhtml+xml;application/vnd.mozilla.xul+xml;text/mml;x-scheme-handler/http;x-scheme-handler/https;
 StartupNotify=true
 Categories=Network;WebBrowser;
-</code>
-</pre>
+</code></pre>
 
 Replace &#8220;Home&#8221; with the name of your profile.
 
@@ -61,7 +60,6 @@ xdotool windowactivate --sync $WID
 xdotool key --window $WID ctrl+t
 xdotool key --window $WID ctrl+l
 xdotool type --window $WID "$1"
-</code>
-</pre>
+</code></pre>
 
 The last thing to to is to open exo-preferred-applications and select the script as the preferred &#8220;web-browser&#8221; (remember &#8220;%s&#8221;).

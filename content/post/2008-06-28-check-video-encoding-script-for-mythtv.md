@@ -38,5 +38,4 @@ EXTRA_OPTIONS="-pfhq --no-splash"
 DEBUG_OPTIONS="--verbose=5 &gt; /shared/mythtv/xine.log"
 
 xine ${VIDEO_DRIVER} ${AUDIO_DRIVER} ${EXTRA_OPTIONS} ${1}
-</code>
-</pre>
+</code></pre>
