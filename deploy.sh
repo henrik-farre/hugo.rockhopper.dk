@@ -62,5 +62,11 @@ git commit -m "$msg"
 # Push source and build repos.
 git push origin master
 
+echo "Resubmitting sitemap to google"
+sleep 5
+
+URL="http%3A%2F%2Frockhopper.dk%2Fsitemap.xml"
+wget -q "http://google.com/ping?sitemap=${URL}" -O /dev/null
+
 # Come Back
 cd ..
