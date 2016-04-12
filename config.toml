@@ -4,6 +4,10 @@ title = "Rockhopper.dk"
 newContentEditor = "nvim"
 theme = "rockhopper"
 
+[blackfriday]
+  smartypants = false
+  smartDashes = false
+
 [params]
   Author = "Henrik Farre"
   GoogleAnalyticsUserID = "UA-4186065-1"
