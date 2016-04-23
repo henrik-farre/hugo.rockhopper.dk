@@ -15,7 +15,7 @@ In the middle of December 2009 danish cable TV providor [Stofa](http://stofa.dk)
 <!--more-->
 
   * Have stable Open Source Linux drivers
-  * It should work with [MythTV](/category/linux/software/mythtv/)
+  * It should work with [MythTV](/categories/mythtv/)
   * Fit in a PCI slot (My Asus AT3N7A-I motherboard only has one PCI slot)
   * Be able to record HD TV
   * Not be to expensive
