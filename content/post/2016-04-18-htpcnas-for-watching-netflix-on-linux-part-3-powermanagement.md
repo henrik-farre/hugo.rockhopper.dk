@@ -1,6 +1,5 @@
 +++
 date = "2016-04-24T11:44:30+02:00"
-draft = true
 url = "/linux/hardware/htpcnas-for-watching-netflix-on-linux-part-3-the-hardware/"
 title = "HTPC/NAS for watching Netflix on Linux part 3: Powermanagement"
 categories = [
