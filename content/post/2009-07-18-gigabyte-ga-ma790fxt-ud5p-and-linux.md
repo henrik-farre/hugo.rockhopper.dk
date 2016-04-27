@@ -24,11 +24,11 @@ I reused my Hauppauge PVR-500, Nvidia GS-7300 and 3x500Gb Seagate harddrives (ra
 
 The motherboard with attached CPU cooler fits nicely into my Antec P182.
 
-{{< photo src="/uploads/gigabyte_ga-ma790fxt-ud5p_1.jpg" title="Gigabyte GA-MA790FXT-UD5P mounted in Antec P182" thumb="/uploads/gigabyte_ga-ma790fxt-ud5p_1-150x150.jpg" no_responsive="true" >}}
+{{< photo src="/uploads/gigabyte_ga-ma790fxt-ud5p_1.jpg" title="Gigabyte GA-MA790FXT-UD5P mounted in Antec P182" thumb="/uploads/thumbnails/gigabyte_ga-ma790fxt-ud5p_1-150x150.jpg" no_responsive="true" >}}
 
 The CPU cooler can only be installed on a socket AM3 motherboard in such a way that the fan either blows up (towards the top of the case) or down (towards the PCI-e slots). When the cooler is mounted in this way, it also means that the lowest fins on the heatsink extends over the two first RAM slots. This might not normally cause any problems, but because the Corsair memory modules have headspreaders attached, they are rather tall, preventing them from being placed below the fins. The solution is to place the modules in the last 2 slots. I choose to install the cooler so the fan blows air hot upwards and out of the case&#8217;s top vents.
 
-{{< photo src="/uploads/gigabyte_ga-ma790fxt-ud5p_2.jpg" title="Xigmatek HDT-S1283 Cooler blocking first two RAM slots" thumb="/uploads/gigabyte_ga-ma790fxt-ud5p_2-150x150.jpg" no_responsive="true" >}}
+{{< photo src="/uploads/gigabyte_ga-ma790fxt-ud5p_2.jpg" title="Xigmatek HDT-S1283 Cooler blocking first two RAM slots" thumb="/uploads/thumbnails/gigabyte_ga-ma790fxt-ud5p_2-150x150.jpg" no_responsive="true" >}}
 
 ## BIOS
 

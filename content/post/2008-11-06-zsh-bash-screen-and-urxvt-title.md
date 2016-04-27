@@ -18,7 +18,7 @@ I use both the zsh and bash shell, and most of the time I run them in screen. Th
 
 I have a pretty consistence terminal title in both shells. I use hostname[last part of current path]:
 
-{{< photo src="/uploads/zsh_screen_urxvt-300x178.jpg" title="Zsh in screen in urxvt" thumb="/uploads/zsh_screen_urxvt-300x178.jpg" no_responsive="true" >}}
+{{< photo src="/uploads/zsh_screen_urxvt.jpg" title="Zsh in screen in urxvt" thumb="/uploads/thumbnails/zsh_screen_urxvt-300x178.jpg" no_responsive="true" >}}
 
 I have the following in my ~/.zsh:
 

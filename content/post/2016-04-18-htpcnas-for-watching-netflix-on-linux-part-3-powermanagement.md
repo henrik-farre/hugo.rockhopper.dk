@@ -26,7 +26,7 @@ My setup consists of 3 scripts:
 
 Kodi is set to shutdown after 5 mins of inactivity (See "Timer til lukning af funktion"):
 
-{{< photo src="/uploads/kodi_powersave_settings.png" title="Kodi Powersave settings" thumb="/uploads/kodi_powersave_settings-320x180.png" no_responsive="true" >}}
+{{< photo src="/uploads/kodi_powersave_settings.png" title="Kodi Powersave settings" thumb="/uploads/thumbnails/kodi_powersave_settings-320x180.png" no_responsive="true" >}}
 
 Every 4 minutes cron runs the <code>kodi-shutdown-inhibit-check.sh</code> script. Note: it requires that <code>kodi-send</code> from the kodi-eventclients package is installed.
 

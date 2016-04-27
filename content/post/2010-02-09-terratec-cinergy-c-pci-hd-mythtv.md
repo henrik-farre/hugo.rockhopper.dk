@@ -88,7 +88,7 @@ I started by shutting down the mythbackend, and starting &#8220;mythtv-setup&#82
 
 In mythtv-setup enter &#8220;Capture cards&#8221; and select &#8220;New capture card&#8221;.
 
-{{< photo src="/uploads/mythtv_capture_card_add_new.png" title="MythTV setup: adding new capture card" thumb="/uploads/mythtv_capture_card_add_new-150x150.png" no_responsive="true" >}}
+{{< photo src="/uploads/mythtv_capture_card_add_new.png" title="MythTV setup: adding new capture card" thumb="/uploads/thumbnails/mythtv_capture_card_add_new-150x150.png" no_responsive="true" >}}
 
   * Card type: &#8220;DVB DTV capture card (v3.x)&#8221; (DVB Device Number should change to &#8220;/dev/dvb/adapter0/frontend0&#8221; and Frontend ID should change to Philips TDA10023 DVB-C)
 
@@ -103,7 +103,7 @@ When I pressed finish, the card is listed on the capture cards page.
 
 In mythtv-setup enter &#8220;Video sources&#8221; and select &#8220;New video source&#8221;.
 
-{{< photo src="/uploads/mythtv_video_source_add_new.png" title="MythTV setup: adding new video source" thumb="/uploads/mythtv_video_source_add_new-150x150.png" no_responsive="true" >}}
+{{< photo src="/uploads/mythtv_video_source_add_new.png" title="MythTV setup: adding new video source" thumb="/uploads/thumbnails/mythtv_video_source_add_new-150x150.png" no_responsive="true" >}}
 
   * Video source name: &#8220;TV Guide&#8221; (whatever you want)
   * Listings grabber: &#8220;Transmitted guide only (EIT)&#8221;
@@ -114,7 +114,7 @@ Press finish and the source should be listed on the sources page.
 
 In mythtv-setup enter &#8220;Input connections&#8221; and select the one that matches the DVB device number you got from capture cards.
 
-{{< photo src="/uploads/mythtv_input_connections.png" title="MythTV setup: input connections" thumb="/uploads/mythtv_input_connections-150x150.png" no_responsive="true" >}}
+{{< photo src="/uploads/mythtv_input_connections.png" title="MythTV setup: input connections" thumb="/uploads/thumbnails/mythtv_input_connections-150x150.png" no_responsive="true" >}}
 
   * Display Name: TV
   * Video source: &#8220;TV Guide&#8221; (the one that was added previously)
@@ -123,7 +123,7 @@ Now press &#8220;Scan for channels&#8221;
 
 ### Scanning for channels
 
-{{< photo src="/uploads/mythtv_scanning_for_channels.png" title="MythTV setup: scanning for channels" thumb="/uploads/mythtv_scanning_for_channels-150x150.png" no_responsive="true" >}}
+{{< photo src="/uploads/mythtv_scanning_for_channels.png" title="MythTV setup: scanning for channels" thumb="/uploads/thumbnails/mythtv_scanning_for_channels-150x150.png" no_responsive="true" >}}
 
   * Desired Services: TV
   * Scan Type: &#8220;Full Scan (Tuned)&#8221;
@@ -133,11 +133,11 @@ Now press &#8220;Scan for channels&#8221;
 
 When you press next MythTV should start scanning:
 
-{{< photo src="/uploads/mythtv_scanning_for_channels2.png" title="MythTV setup: performing the scan" thumb="/uploads/mythtv_scanning_for_channels2-150x150.png" no_responsive="true" >}}
+{{< photo src="/uploads/mythtv_scanning_for_channels2.png" title="MythTV setup: performing the scan" thumb="/uploads/thumbnails/mythtv_scanning_for_channels2-150x150.png" no_responsive="true" >}}
 
 This takes a while, and then you should get:
 
-{{< photo src="/uploads/mythtv_scanning_for_channels_done.png" title="MythTV setup: channel scanning completed" thumb="/uploads/mythtv_scanning_for_channels_done-150x150.png" no_responsive="true" >}}
+{{< photo src="/uploads/mythtv_scanning_for_channels_done.png" title="MythTV setup: channel scanning completed" thumb="/uploads/thumbnails/mythtv_scanning_for_channels_done-150x150.png" no_responsive="true" >}}
 
 Select &#8220;Insert all&#8221; which brings you back to the input connection screen.
 
