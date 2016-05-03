@@ -9,7 +9,7 @@ THEME="rockhopper"
 rm -rf public/*
 
 STYLESHEET_PATHS="static/css themes/${THEME}/static/css"
-JAVASCRIPT_PATHS="static/js"
+JAVASCRIPT_PATHS="static/js themes/${THEME}/static/js"
 
 get_stylesheets()
 {
