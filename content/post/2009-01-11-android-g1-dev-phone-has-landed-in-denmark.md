@@ -39,12 +39,10 @@ After activating 3G service at Telmore (danish mobile phone provider) I was able
 
 ## Photos
 
-{{< photo src="/uploads/g1_box_with_contents.jpg" title="Contents of box. Note the power adaptor" thumb="/uploads/thumbnails/g1_box_with_contents-150x150.jpg" no_responsive="true" >}}
-
-{{< photo src="/uploads/g1_front.jpg" title="Front of G1" thumb="/uploads/thumbnails/g1_front-150x150.jpg" no_responsive="true" >}}
-
-{{< photo src="/uploads/g1_back.jpg" title="Backside of G1" thumb="/uploads/thumbnails/g1_back-150x150.jpg" no_responsive="true" >}}
-
-{{< photo src="/uploads/g1_treo600_side_by_side.jpg" title="HTC G1 side by side with my old PalmOne Treo 600" thumb="/uploads/thumbnails/g1_treo600_side_by_side-150x150.jpg" no_responsive="true" >}}
-
-{{< photo src="/uploads/g1_headphones.jpg" title="Head phones with micro usb connector" thumb="/uploads/thumbnails/g1_headphones-150x150.jpg" no_responsive="true" >}}
+{{< gallery >}}
+{{< gallery-photo src="/uploads/g1_box_with_contents.jpg" title="Contents of box. Note the power adaptor" thumb="/uploads/thumbnails/g1_box_with_contents-150x150.jpg" no_responsive="true" >}}
+{{< gallery-photo src="/uploads/g1_front.jpg" title="Front of G1" thumb="/uploads/thumbnails/g1_front-150x150.jpg" no_responsive="true" >}}
+{{< gallery-photo src="/uploads/g1_back.jpg" title="Backside of G1" thumb="/uploads/thumbnails/g1_back-150x150.jpg" no_responsive="true" >}}
+{{< gallery-photo src="/uploads/g1_treo600_side_by_side.jpg" title="HTC G1 side by side with my old PalmOne Treo 600" thumb="/uploads/thumbnails/g1_treo600_side_by_side-150x150.jpg" no_responsive="true" >}}
+{{< gallery-photo src="/uploads/g1_headphones.jpg" title="Head phones with micro usb connector" thumb="/uploads/thumbnails/g1_headphones-150x150.jpg" no_responsive="true" >}}
+{{< /gallery >}}
