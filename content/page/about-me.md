@@ -4,7 +4,7 @@ title = "About me"
 url = "/about-me"
 
 +++
-I'm a veteran web developer with experience in a multitude of PHP based applications, including:
+I'm a veteran web developer with experience in a multitude of PHP based applications<!--more-->, including:
 
  * Drupal
  * eZ Publish
