@@ -11,6 +11,11 @@ for CMD in "${REQUIRED_CMD[@]}"; do
   fi
 done
 
+if [ ! -d "public/.git" ]; then
+  echo "public has to be a git checkout!" 1>&2
+  exit 1
+fi
+
 echo -e "\033[0;32mDeploying updates to GitHub...\033[0m"
 
 THEME="rockhopper"
