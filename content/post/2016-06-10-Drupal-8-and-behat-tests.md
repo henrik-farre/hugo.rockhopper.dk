@@ -1,6 +1,5 @@
 +++
 date = "2016-06-10T10:23:40+02:00"
-draft = true
 title = "Drupal 8 and Behat tests"
 url = "linux/software/drupal-8-and-behat-tests"
 tags = ["Behat", "Drupal 8"]
