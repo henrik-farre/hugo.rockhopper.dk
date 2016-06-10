@@ -2,6 +2,15 @@
 # Base on:
 # - https://gohugo.io/tutorials/github-pages-blog/
 # - https://blog.tohojo.dk/2015/10/automatically-combining-css-files-with-hugo.html
+REQUIRED_CMD=('cssmin' 'uglifyjs')
+
+for CMD in "${REQUIRED_CMD[@]}"; do
+  if ! command -v "$CMD" &>/dev/null; then
+    echo "Missing command: $CMD" 1>&2
+    exit 1
+  fi
+done
+
 echo -e "\033[0;32mDeploying updates to GitHub...\033[0m"
 
 THEME="rockhopper"
@@ -52,8 +61,9 @@ find public -name '*.css' -not -name combined.css -delete
 # Remove source js files
 find public -name '*.js' -not -name combined.js -delete
 
+(
 # Go To Public folder
-cd public
+cd public || exit 1
 
 # Add changes to git.
 git add -A
@@ -61,7 +71,7 @@ git add -A
 # Commit changes.
 msg="rebuilding site $(date)"
 if [ $# -eq 1 ]
-  then msg="$1"
+then msg="$1"
 fi
 git commit -m "$msg"
 
@@ -73,6 +83,4 @@ sleep 5
 
 URL="http%3A%2F%2Frockhopper.dk%2Fsitemap.xml"
 wget -q "http://google.com/ping?sitemap=${URL}" -O /dev/null
-
-# Come Back
-cd ..
+)
