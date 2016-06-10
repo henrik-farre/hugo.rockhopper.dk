@@ -7,6 +7,12 @@ echo -e "\033[0;32mDeploying updates to GitHub...\033[0m"
 THEME="rockhopper"
 
 rm -rf public/*
+if [ ! -d "static/js" ]; then
+  mkdir static/js
+fi
+if [ ! -d "static/css" ]; then
+  mkdir static/css
+fi
 
 STYLESHEET_PATHS="static/css themes/${THEME}/static/css"
 JAVASCRIPT_PATHS="static/js themes/${THEME}/static/js"
