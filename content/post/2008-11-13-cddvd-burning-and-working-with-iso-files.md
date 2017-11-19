@@ -1,7 +1,7 @@
 ---
 title: CD/DVD burning, and working with .iso files
 author: Henrik
-layout: post
+
 date: 2008-11-13
 url: /linux/software/cddvd-burning-and-working-with-iso-files/
 categories:

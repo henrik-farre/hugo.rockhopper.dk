@@ -1,6 +1,6 @@
 ---
 title: 'Multiple profiles in Firefox: tips and tricks'
-layout: post
+
 date: 2014-06-08
 url: /linux/multiple-profiles-in-firefox-tips-and-tricks/
 categories:

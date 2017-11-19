@@ -1,7 +1,7 @@
 ---
 title: How not to restore a Linux software raid
 author: Henrik
-layout: post
+
 date: 2009-04-19
 url: /linux/software/how-not-to-restore-a-linux-software-raid/
 categories:

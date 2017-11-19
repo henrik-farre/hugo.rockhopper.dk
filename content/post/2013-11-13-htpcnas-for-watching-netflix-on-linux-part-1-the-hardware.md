@@ -1,7 +1,7 @@
 ---
 title: 'HTPC/NAS for watching Netflix on Linux part 1: the hardware'
 author: Henrik
-layout: post
+
 date: 2013-11-13
 url: /linux/hardware/htpcnas-for-watching-netflix-on-linux-part-1-the-hardware/
 categories:

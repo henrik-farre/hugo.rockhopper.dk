@@ -1,7 +1,7 @@
 ---
 title: 'zsh prompt/window title: trim middle of path'
 author: Henrik
-layout: post
+
 date: 2014-01-07
 url: /linux/zsh-promptwindow-title-trim-middle-of-path/
 categories:

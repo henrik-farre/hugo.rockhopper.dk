@@ -1,7 +1,7 @@
 ---
 title: 'Xfce: auto rotate wallpaper without cron'
 author: Henrik
-layout: post
+
 date: 2010-02-14
 url: /linux/software/xfce/xfce-auto-rotate-wallpaper-without-cron/
 categories:

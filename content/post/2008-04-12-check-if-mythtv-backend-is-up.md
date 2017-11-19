@@ -1,7 +1,7 @@
 ---
 title: Check if MythTV backend is up
 author: Henrik
-layout: post
+
 date: 2008-04-12
 url: /linux/software/mythtv/check-if-mythtv-backend-is-up/
 categories:

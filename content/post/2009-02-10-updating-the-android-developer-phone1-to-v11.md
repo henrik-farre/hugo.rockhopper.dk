@@ -1,7 +1,7 @@
 ---
 title: Updating the Android Developer Phone1 to v1.1
 author: Henrik
-layout: post
+
 date: 2009-02-10
 url: /linux/hardware/phone-and-pda/updating-the-android-developer-phone1-to-v11/
 categories:

@@ -1,7 +1,7 @@
 ---
 title: Docker and PHP xdebug
 author: Henrik
-layout: post
+
 date: 2014-01-04
 url: /linux/docker-and-php-xdebug/
 categories:

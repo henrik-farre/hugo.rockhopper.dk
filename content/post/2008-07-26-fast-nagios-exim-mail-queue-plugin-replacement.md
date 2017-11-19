@@ -1,7 +1,7 @@
 ---
 title: Fast nagios exim mail queue plugin replacement
 author: Henrik
-layout: post
+
 date: 2008-07-26
 url: /linux/software/fast-nagios-exim-mail-queue-plugin-replacement/
 categories:

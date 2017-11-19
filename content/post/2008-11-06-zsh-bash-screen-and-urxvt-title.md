@@ -1,7 +1,7 @@
 ---
 title: zsh, bash, screen and urxvt title
 author: Henrik
-layout: post
+
 date: 2008-11-05
 url: /linux/software/zsh-bash-screen-and-urxvt-title/
 categories:

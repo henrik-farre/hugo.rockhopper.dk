@@ -1,7 +1,7 @@
 ---
 title: Installing ArchLinux PPC on my Powerbook Titanium
 author: Henrik
-layout: post
+
 date: 2008-07-26
 url: /linux/hardware/installing-archlinux-ppc-on-my-powerbook-titanium/
 categories:

@@ -1,7 +1,7 @@
 ---
 title: Logitech Marble FX trackball with Xorg and Hal
 author: Henrik
-layout: post
+
 date: 2008-12-06
 url: /linux/hardware/logitech-marble-fx-trackball-with-xorg-and-hal/
 categories:

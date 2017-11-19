@@ -1,7 +1,7 @@
 ---
 title: UEFI booting Arch Linux on a HP ProBook 6360b
 author: Henrik
-layout: post
+
 date: 2013-03-17
 url: /linux/hardware/uefi-booting-arch-linux-on-a-hp-probook-6360b/
 categories:

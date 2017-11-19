@@ -1,7 +1,7 @@
 ---
 title: Android G1 Dev Phone has landed in Denmark
 author: Henrik
-layout: post
+
 date: 2009-01-11
 url: /linux/hardware/phone-and-pda/android-g1-dev-phone-has-landed-in-denmark/
 categories:

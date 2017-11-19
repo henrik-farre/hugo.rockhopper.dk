@@ -1,7 +1,7 @@
 ---
 title: Upgrading an Android Developer Phone 1 to Cyanogenmod 5.0.7 (Android 2.1)
 author: Henrik
-layout: post
+
 date: 2010-06-19
 url: /linux/hardware/phone-and-pda/upgrading-an-android-developer-phone-1-to-cyanogenmod-5-0-7-android-2-1/
 categories:

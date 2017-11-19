@@ -1,7 +1,7 @@
 ---
 title: AnySee E30 C Plus + MythTV
 author: Henrik
-layout: post
+
 date: 2010-05-29
 url: /linux/software/mythtv/anysee-e30-c-plus-mythtv/
 categories:

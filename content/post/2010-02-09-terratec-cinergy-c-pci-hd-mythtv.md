@@ -1,7 +1,7 @@
 ---
 title: Terratec Cinergy C PCI HD + MythTV
 author: Henrik
-layout: post
+
 date: 2010-02-09
 url: /linux/software/mythtv/terratec-cinergy-c-pci-hd-mythtv/
 categories:

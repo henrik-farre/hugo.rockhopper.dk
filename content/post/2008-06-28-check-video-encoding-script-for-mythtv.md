@@ -1,7 +1,7 @@
 ---
 title: Check video encoding script for MythTV
 author: Henrik
-layout: post
+
 date: 2008-06-28
 url: /linux/software/mythtv/check-video-encoding-script-for-mythtv/
 categories:

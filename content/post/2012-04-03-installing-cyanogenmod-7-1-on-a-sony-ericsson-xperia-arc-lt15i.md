@@ -1,7 +1,7 @@
 ---
 title: Installing CyanogenMod 7.1 on a Sony Ericsson Xperia Arc (LT15i)
 author: Henrik
-layout: post
+
 date: 2012-04-03
 url: /linux/hardware/phone-and-pda/installing-cyanogenmod-7-1-on-a-sony-ericsson-xperia-arc-lt15i/
 categories:

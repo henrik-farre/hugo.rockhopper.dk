@@ -1,7 +1,7 @@
 ---
 title: 'Android Developer Phone: Mini review'
 author: Henrik
-layout: post
+
 date: 2009-01-24
 url: /linux/hardware/phone-and-pda/android-developer-phone-mini-review/
 categories:

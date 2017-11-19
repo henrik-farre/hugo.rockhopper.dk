@@ -1,7 +1,7 @@
 ---
 title: Gigabyte GA-MA790FXT-UD5P and Linux
 author: Henrik
-layout: post
+
 date: 2009-07-18
 url: /linux/hardware/gigabyte-ga-ma790fxt-ud5p-and-linux/
 categories:

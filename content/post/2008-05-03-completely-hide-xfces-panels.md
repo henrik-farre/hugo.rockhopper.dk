@@ -1,7 +1,7 @@
 ---
 title: Completely hide Xfce’s panels
 author: Henrik
-layout: post
+
 date: 2008-05-03
 url: /linux/software/xfce/completely-hide-xfces-panels/
 categories:
